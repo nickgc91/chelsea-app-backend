@@ -25,7 +25,7 @@ class UsersController < ApplicationController
     def profile
         user = get_current_user
         if user
-            render json: { first_name: user.first_name, last_name: user.last_name } 
+            render json: { first_name: user.first_name, last_name: user.last_name, favorite_player: user.favorite_player } 
         else
             render json: {error: 'Invalid token.'}, status: 401
         end
