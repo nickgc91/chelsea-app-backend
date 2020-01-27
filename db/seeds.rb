@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-nick = User.create(username: 'Nick', password: 'nick', first_name: 'Nicolas', last_name: 'Cha', favorite_player:  'Kante', favorite_video:  'XnzYbCe-dpE')
-bob = User.create(username: 'Bob', password: 'bob', first_name: 'Bob', last_name: 'Lang', favorite_player:  'Abraham', favorite_video:  '9LDjq7IzyLY')
-chris = User.create(username: 'Chris', password: 'chris', first_name: 'Christopher', last_name: 'Fu', favorite_player:  'Mount')
-jack = User.create(username: 'Jack', password: 'jack', first_name: 'Jackery', last_name: 'Pump', favorite_player:  'Pulisic')
+nick = User.create(username: 'Nick', password: 'nick', first_name: 'Nicolas', last_name: 'Cha', favorite_player:  'Kante', favorite_video:  "XnzYbCe-dpE")
+bob = User.create(username: 'Bob', password: 'bob', first_name: 'Bob', last_name: 'Lang', favorite_player:  'Abraham', favorite_video:  "9LDjq7IzyLY")
+chris = User.create(username: 'Chris', password: 'chris', first_name: 'Christopher', last_name: 'Fu', favorite_player:  'Mount', favorite_video:  "9LDjq")
+jack = User.create(username: 'Jack', password: 'jack', first_name: 'Jackery', last_name: 'Pump', favorite_player:  'Pulisic', favorite_video:  "9LDjq7Izy")
