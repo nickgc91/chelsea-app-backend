@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2019_12_10_171846) do
     t.string "username"
     t.string "password_digest"
     t.string "favorite_player"
+    t.string "favorite_video"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
