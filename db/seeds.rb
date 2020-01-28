@@ -8,6 +8,7 @@
 
 
 nick = User.create(username: 'Nick', password: 'nick', first_name: 'Nicolas', last_name: 'Cha', favorite_player:  'Kante', favorite_video:  "XnzYbCe-dpE")
+imran = User.create(username: 'Imran', password: 'imran', first_name: 'Imran', last_name: 'Hossain', favorite_player:  'Rudiger', favorite_video:  "t8Iw01t-1vk")
 bob = User.create(username: 'Bob', password: 'bob', first_name: 'Bob', last_name: 'Lang', favorite_player:  'Abraham', favorite_video:  "9LDjq7IzyLY")
-chris = User.create(username: 'Chris', password: 'chris', first_name: 'Christopher', last_name: 'Fu', favorite_player:  'Mount', favorite_video:  "9LDjq")
-jack = User.create(username: 'Jack', password: 'jack', first_name: 'Jackery', last_name: 'Pump', favorite_player:  'Pulisic', favorite_video:  "9LDjq7Izy")
+chris = User.create(username: 'Chris', password: 'chris', first_name: 'Christopher', last_name: 'Fu', favorite_player:  'Mount', favorite_video:  "")
+jack = User.create(username: 'Jack', password: 'jack', first_name: 'Jackery', last_name: 'Pump', favorite_player:  'Pulisic', favorite_video:  "")
