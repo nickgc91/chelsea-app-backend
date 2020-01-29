@@ -25,9 +25,20 @@ class UsersController < ApplicationController
     def profile
         user = get_current_user
         if user
-            render json: { first_name: user.first_name, last_name: user.last_name, favorite_player: user.favorite_player, favorite_video: user.favorite_video } 
+            render json: { first_name: user.first_name, last_name: user.last_name, favorite_player: user.favorite_player, favorite_video: user.favorite_video, 
+            favorite_match: user.favorite_match, memorable_moment: user.memorable_moment, uplifting_win: user.uplifting_win, demoralizing_defeat: user.demoralizing_defeat } 
         else
             render json: {error: 'Invalid token.'}, status: 401
+        end
+    end
+
+    def updateFavMatch
+        user = get_current_user
+        if user
+            user.update(favorite_match: update_params[:data])
+            render json: {favorite_match: user.favorite_match}
+        else
+            render json: {error: "Couldn't find user!"}
         end
     end
 
@@ -41,6 +52,10 @@ class UsersController < ApplicationController
 
     def sign_in_params
         params.require(:data).permit(:username, :password)
+    end
+
+    def update_params
+        params.require(:data).permit(:data)
     end
 
 
