@@ -5,5 +5,8 @@ Rails.application.routes.draw do
   get '/users', to: 'users#index' 
   get '/validate', to: 'users#validate'
   get '/profile', to: 'users#profile'
-  
+  post '/updateFavMatch', to: 'users#updateFavMatch'
+  post '/updateMemorableMemory', to: 'users#updateMemorableMemory'
+  post '/updateUpliftingWin', to: 'users#updateUpliftingWin'
+  post '/updateDemoralizingDefeat', to: 'users#updateDemoralizingDefeat'
 end
