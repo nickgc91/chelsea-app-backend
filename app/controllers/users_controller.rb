@@ -42,6 +42,47 @@ class UsersController < ApplicationController
         end
     end
 
+    def updateMemorableMemory
+        user = get_current_user
+        if user
+            user.update(memorable_moment: update_params[:data])
+            render json: {memorable_moment: user.memorable_moment}
+        else
+            render json: {error: "Couldn't find user!"}
+        end
+    end
+    
+    def updateUpliftingWin
+        user = get_current_user
+        if user
+            user.update(uplifting_win: update_params[:data])
+            render json: {uplifting_win: user.uplifting_win}
+        else
+            render json: {error: "Couldn't find user!"}
+        end
+    end
+
+    def updateDemoralizingDefeat
+        user = get_current_user
+        if user
+            user.update(demoralizing_defeat: update_params[:data])
+            render json: {demoralizing_defeat: user.demoralizing_defeat}
+        else
+            render json: {error: "Couldn't find user!"}
+        end
+    end
+
+    def updateYoutubeVideoId
+        user = get_current_user
+        if user
+            user.update(favorite_video: update_params[:data])
+            render json: {favorite_video: user.favorite_video}
+        else
+            render json: {error: "Couldn't find user!"}
+        end
+    end
+    
+
 
     def index
         users = User.all
