@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   post '/updateMemorableMemory', to: 'users#updateMemorableMemory'
   post '/updateUpliftingWin', to: 'users#updateUpliftingWin'
   post '/updateDemoralizingDefeat', to: 'users#updateDemoralizingDefeat'
+  post '/updateYoutubeVideoId', to: 'users#updateYoutubeVideoId'
 end
